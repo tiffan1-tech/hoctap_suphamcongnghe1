@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Học Tập Cùng Thành Công</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      background-image: url('https://imgur.com/2dm7xii.jpg');
+      background-size: cover;
+      background-position: center;
+      animation: fadeInHeader 2s ease-in-out;
+    }
+    header img.logo {
+      max-height: 80px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    header h1, header p {
+      background-color: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: #0056b3;
+      margin: 0;
+      animation: slideInNav 1s ease-in-out;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      transition: background-color 0.3s;
+    }
+    nav ul li a:hover {
+      background: #003f7f;
+      border-radius: 5px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      animation: fadeIn 1s ease-in-out;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #007bff;
+      color: white;
+      margin-top: 20px;
+    }
+    .login-area {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .login-area input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .login-area button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-area button:hover {
+      background-color: #218838;
+    }
+    .teacher-upload, .student-portal, .online-learning {
+      margin-top: 30px;
+    }
+    .student-portal {
+      display: none;
+    }
+    img.school-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+      animation: zoomIn 1.5s ease-in-out;
+    }
+    .teacher-info img {
+      width: 150px;
+      border-radius: 50%;
+      margin: 10px 0;
+    }
+    .course-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .course-buttons a:hover {
+      background-color: #0056b3;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInHeader {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes slideInNav {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://imgur.com/PBky9QT.jpg" alt="Logo">
+    <h1>Học Tập Cùng Thành Công</h1>
+    <p>Nơi kết nối tri thức và phát triển bản thân</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#gioithieu">Giới thiệu</a></li>
+      <li><a href="#khoahoc">Khóa học</a></li>
+      <li><a href="#giangvien">Giảng viên</a></li>
+      <li><a href="#lienhe">Liên hệ</a></li>
+      <li><a href="#dangnhap">Đăng nhập</a></li>
+      <li><a href="https://kahoot.it" target="_blank">Chơi Kahoot</a></li>
+    </ul>
+  </nav>
+
+  <section id="gioithieu">
+    <h2>Giới Thiệu</h2>
+    <p>Chúng tôi mang đến môi trường học tập hiện đại, thân thiện với các chương trình đào tạo từ cơ bản đến nâng cao, giúp bạn phát triển toàn diện cả kiến thức lẫn kỹ năng.</p>
+    <img class="school-image" src="https://imgur.com/B5spBTW.jpg" alt="Trường Đại học Sư phạm">
+  </section>
+
+  <section id="khoahoc">
+    <h2>Khóa Học</h2>
+    <div class="course-buttons">
+      <a href="https://www.tailieumontoan.com/" target="_blank">Toán</a>
+      <a href="https://tailieu.ngoaingu24h.vn/" target="_blank">Tiếng Anh</a>
+      <a href="https://www.luyenthikhangduy.edu.vn/tai-lieu-mon-khtn" target="_blank">Khoa học tự nhiên</a>
+      <a href="https://thuvienhoclieu.com/tai-lieu-ngu-van/" target="_blank">Ngữ Văn</a>
+      <a href="https://dethi.violet.vn/category/cong-nghe-1166.html" target="_blank">Công nghệ</a>
+    </div>
+  </section>
+
+  <section id="giangvien">
+    <h2>Đội Ngũ Giảng Viên</h2>
+    <p>Đội ngũ giảng viên tận tâm, chuyên môn cao và có kinh nghiệm thực tiễn phong phú.</p>
+    <div class="teacher-info">
+      <a href="https://csdlkhoahoc.hueuni.edu.vn/index.php/scientist/detail/id/1352" target="_blank">
+        <img src="https://imgur.com/sRVrrBM.jpg" alt="Thầy Trương Thế Quy">
+        <p>Thầy Trương Thế Quy</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="dangnhap" class="login-area">
+    <h2>Đăng Nhập Học Sinh</h2>
+    <input type="text" id="username" placeholder="Mã học sinh (ví dụ: 24S106001)">
+    <input type="password" id="password" placeholder="Mật khẩu">
+    <button onclick="loginStudent()">Đăng nhập</button>
+    <p id="loginMessage"></p>
+  </section>
+
+  <section class="teacher-upload">
+    <h2>Khu vực dành cho Giáo viên</h2>
+    <p>Giáo viên có thể tải lên bài giảng và giáo án tại đây.</p>
+    <input type="file">
+    <button>Tải lên</button>
+  </section>
+
+  <section class="student-portal" id="studentPortal">
+    <h2>Thông Tin Học Sinh</h2>
+    <ul>
+      <li><a href="#">Xem kết quả học tập</a></li>
+      <li><a href="#">Xem thời khóa biểu</a></li>
+      <li><a href="#">Xem hồ sơ giáo viên giảng dạy</a></li>
+    </ul>
+  </section>
+
+  <section class="online-learning" id="onlineLearning">
+    <h2>Học Trực Tuyến</h2>
+    <p>Hệ thống học trực tuyến giúp bạn học mọi lúc, mọi nơi.</p>
+    <ul>
+      <li><a href="https://zoom.us" target="_blank">Tham gia Zoom lớp học</a></li>
+      <li><a href="https://meet.google.com" target="_blank">Tham gia Google Meet</a></li>
+    </ul>
+  </section>
+
+  <section id="lienhe">
+    <h2>Liên Hệ</h2>
+    <p>Email: suphamcongnghe1@gmail.com</p>
+    <p>Hotline: 0837018358</p>
+    <p>Địa chỉ: 32 Lê Lợi, Quận Thuận Hóa, TP Huế</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Học Tập Cùng Thành Công. Bản quyền thuộc về lớp Sư Phạm Công Nghệ 1, Đại học Sư Phạm Huế.</p>
+  </footer>
+
+  <script>
+    function loginStudent() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const loginMessage = document.getElementById("loginMessage");
+      const portal = document.getElementById("studentPortal");
+
+      const validPattern = /^24S1060\d{2}$/;
+      const num = parseInt(username.slice(-2));
+
+      if (validPattern.test(username) && num >= 1 && num <= 52 && password === "123") {
+        loginMessage.textContent = "Đăng nhập thành công!";
+        loginMessage.style.color = "green";
+        portal.style.display = "block";
+      } else {
+        loginMessage.textContent = "Sai mã học sinh hoặc mật khẩu.";
+        loginMessage.style.color = "red";
+        portal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
